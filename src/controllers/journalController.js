@@ -202,9 +202,10 @@ const getJournalFeed = async (req, res) => {  try {
   }
 };
 
-module.exports = {
-  createJournal,
-  updateJournal,
-  deleteJournal,
-  getJournalFeed
-};
+// module.exports = {
+//   createJournal,
+//   updateJournal,
+//   deleteJournal,
+//   getJournalFeed
+// };
+export { createJournal, updateJournal, deleteJournal, getJournalFeed };
