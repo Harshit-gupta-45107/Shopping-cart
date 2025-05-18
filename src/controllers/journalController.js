@@ -1,8 +1,13 @@
-const { validationResult } = require('express-validator');
-const Journal = require('../models/journal');
-const userModel = require('../models/user');
-const Notification = require('../models/notification');
-const path = require('path');
+// const { validationResult } = require('express-validator');
+// const Journal = require('../models/journal');
+// const userModel = require('../models/user');
+// const Notification = require('../models/notification');
+// const path = require('path');
+import { validationResult } from 'express-validator';
+import Journal from '../models/journal.js';
+import userModel from '../models/user.js';
+import Notification from '../models/notification.js';
+import path from 'path';
 
 // Helper function to convert to IST
 const convertToIST = (date) => {
