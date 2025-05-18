@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+import { dirname, join, path } from 'path';
 import auth from './routes/auth.js';
 import journal from './routes/journal.js';
 import notification from './routes/notification.js';
