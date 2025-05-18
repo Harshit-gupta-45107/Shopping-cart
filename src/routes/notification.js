@@ -13,4 +13,5 @@ router.get('/', notificationController.getNotifications);
 // Mark notification as read
 router.put('/:id/read', notificationController.markAsRead);
 
-module.exports = router;
+//module.exports = router;
+export default router;
