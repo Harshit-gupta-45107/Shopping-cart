@@ -43,4 +43,6 @@ const notificationController = {
     }
 };
 
-module.exports = notificationController;
+// module.exports = notificationController;
+export default notificationController;
+
