@@ -1,4 +1,5 @@
-const db = require('../config/db');
+// const db = require('../config/db');
+import db from '../config/db.js';
 
 class Journal {
   static async create(title, description, teacherId, publishedAt, studentIds = [], attachments = []) {
@@ -136,4 +137,5 @@ class Journal {
   }
 }
 
-module.exports = Journal;
+// module.exports = Journal;
+export default Journal;
