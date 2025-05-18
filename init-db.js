@@ -26,7 +26,20 @@ async function initDatabase() {
 
     try {
         await client.connect();
-        console.log('Connected to database');
+        console.log('Connected to database');        // Drop existing types and tables
+        await client.query(`
+            DROP TYPE IF EXISTS notification_status CASCADE;
+            DROP TYPE IF EXISTS notification_type CASCADE;
+            DROP TYPE IF EXISTS user_role CASCADE;
+            DROP TYPE IF EXISTS attachment_type CASCADE;
+            
+            DROP TABLE IF EXISTS notifications CASCADE;
+            DROP TABLE IF EXISTS journal_students CASCADE;
+            DROP TABLE IF EXISTS attachments CASCADE;
+            DROP TABLE IF EXISTS journals CASCADE;
+            DROP TABLE IF EXISTS users CASCADE;
+        `);
+        console.log('Dropped existing tables and types');
 
         // Read and execute schema.sql
         const schemaSQL = fs.readFileSync(path.join(__dirname, 'sql', 'schema.sql'), 'utf8');
