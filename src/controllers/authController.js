@@ -1,10 +1,16 @@
-const jwt = require('jsonwebtoken');
-const bcrypt = require('bcryptjs');
-const { validationResult } = require('express-validator');
-const userModel = require('../models/user');
-const jwtConfig = require('../config/jwt');
-const User = require('../models/user');
-const { generateToken } = require('../config/jwt');
+// const jwt = require('jsonwebtoken');
+// const bcrypt = require('bcryptjs');
+// const { validationResult } = require('express-validator');
+// const userModel = require('../models/user');
+// const jwtConfig = require('../config/jwt');
+// const User = require('../models/user');
+// const { generateToken } = require('../config/jwt');
+import jwt from 'jsonwebtoken';
+import bcrypt from 'bcryptjs';
+import { validationResult } from 'express-validator';
+import userModel from '../models/user.js';
+import jwtConfig, { generateToken } from '../config/jwt.js';
+import User from '../models/user.js';
 
 const authController = {
   // Register a new user
