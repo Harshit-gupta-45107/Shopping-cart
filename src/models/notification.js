@@ -1,4 +1,5 @@
-const db = require('../config/db');
+// const db = require('../config/db');
+import db from '../config/db.js';
 
 class Notification {
     static async create(userId, type, title, message, relatedJournalId) {
@@ -46,4 +47,5 @@ class Notification {
     }
 }
 
-module.exports = Notification;
+// module.exports = Notification;
+export default Notification;
