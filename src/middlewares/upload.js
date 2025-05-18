@@ -1,7 +1,14 @@
-const multer = require('multer');
-const path = require('path');
-const fs = require('fs');
-require('dotenv').config();
+// const multer = require('multer');
+// const path = require('path');
+// const fs = require('fs');
+// require('dotenv').config();
+
+import multer from 'multer';
+import path from 'path';
+import fs from 'fs';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 // Ensure upload directory exists
 const uploadDir = process.env.UPLOAD_DIR || 'uploads';
