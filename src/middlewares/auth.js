@@ -1,4 +1,6 @@
-const { verifyToken } = require('../config/jwt');
+// const { verifyToken } = require('../config/jwt');
+import { verifyToken } from '../config/jwt.js';
+
 
 // Middleware to verify JWT token
 const authenticate = (req, res, next) => {
