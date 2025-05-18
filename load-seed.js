@@ -1,6 +1,11 @@
-const { Client } = require('pg');
-const fs = require('fs');
-const path = require('path');
+// const { Client } = require('pg');
+// const fs = require('fs');
+// const path = require('path');
+import pkg from 'pg';
+const { Client } = pkg;
+import fs from 'fs';
+import path from 'path';
+
 
 async function loadSeedData() {
     const client = new Client({
