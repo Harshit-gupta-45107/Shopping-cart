@@ -30,4 +30,5 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Something went wrong!' });
 });
 
-module.exports = app;
+//module.exports = app;
+export default app;
