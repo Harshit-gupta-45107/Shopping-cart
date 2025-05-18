@@ -1,12 +1,21 @@
-const express = require('express');
-const { authenticate, authorizeTeacher } = require('../middlewares/auth');
-const upload = require('../middlewares/upload');
-const {
+// const express = require('express');
+// const { authenticate, authorizeTeacher } = require('../middlewares/auth');
+// const upload = require('../middlewares/upload');
+// const {
+//   createJournal,
+//   updateJournal,
+//   deleteJournal,
+//   getJournalFeed
+// } = require('../controllers/journalController');
+import express from 'express';
+import { authenticate, authorizeTeacher } from '../middlewares/auth.js';
+import upload from '../middlewares/upload.js';
+import {
   createJournal,
   updateJournal,
   deleteJournal,
   getJournalFeed
-} = require('../controllers/journalController');
+} from '../controllers/journalController.js';
 
 const router = express.Router();
 
