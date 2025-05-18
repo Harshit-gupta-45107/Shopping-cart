@@ -1,6 +1,10 @@
-const { Pool, Client } = require('pg');
-const fs = require('fs');
-const path = require('path');
+// const { Pool, Client } = require('pg');
+// const fs = require('fs');
+// const path = require('path');
+import pkg from 'pg';
+const { Pool, Client } = pkg;
+import fs from 'fs';
+import path from 'path';
 
 async function setupDatabase() {
     // Create a client connection to postgres database (not using connection pooling)
