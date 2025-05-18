@@ -106,4 +106,5 @@ router.post(
  */
 router.get('/profile', authenticate, authController.getProfile);
 
-module.exports = router;
+//module.exports = router;
+export default router;
