@@ -21,4 +21,5 @@ router.post('/', authorizeTeacher, upload.array('attachment'), createJournal);
 router.put('/:id', authorizeTeacher, upload.array('attachment'), updateJournal);
 router.delete('/:id', authorizeTeacher, deleteJournal);
 
-module.exports = router;
+//module.exports = router;
+export default router;
