@@ -1,9 +1,13 @@
-const express = require('express');
-const cors = require('cors');
-const path = require('path');
-const auth = require('./routes/auth');
-const journal = require('./routes/journal');
-const notification = require('./routes/notification');
+import express from 'express';
+import cors from 'cors';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+import auth from './routes/auth.js';
+import journal from './routes/journal.js';
+import notification from './routes/notification.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const app = express();
 
