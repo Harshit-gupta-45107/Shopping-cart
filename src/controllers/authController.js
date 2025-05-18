@@ -9,7 +9,7 @@ import jwt from 'jsonwebtoken';
 import bcrypt from 'bcryptjs';
 import { validationResult } from 'express-validator';
 import userModel from '../models/user.js';
-import jwtConfig, { generateToken } from '../config/jwt.js';
+import { generateToken } from '../config/jwt.js';
 import User from '../models/user.js';
 
 const authController = {
