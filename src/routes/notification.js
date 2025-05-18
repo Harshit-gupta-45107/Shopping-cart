@@ -1,6 +1,10 @@
-const express = require('express');
-const { authenticate } = require('../middlewares/auth');
-const notificationController = require('../controllers/notificationController');
+// const express = require('express');
+// const { authenticate } = require('../middlewares/auth');
+// const notificationController = require('../controllers/notificationController');
+
+import express from 'express';
+import { authenticate } from '../middlewares/auth.js';
+import notificationController from '../controllers/notificationController.js';
 
 const router = express.Router();
 
